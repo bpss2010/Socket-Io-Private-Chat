@@ -1,0 +1,41 @@
+<!DOCTYPE html><html class=''>
+<head><link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
+<style class="cp-pen-styles"></style>
+<link href='style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="frame">
+	<div id="sidepanel">
+		<div id="profile">
+			<div class="wrap">
+				<img id="profile-img" src="http://www.gravatar.com/avatar/?d=identicon" class="online" alt="" />
+				<p><span id="showUserId"></span><input type="hidden" id="userid" data-userid=""></p>
+			</div>
+		</div>
+		<hr>
+		<div id="contacts"><ul id="activeUserList"></ul></div>
+	</div>
+	<div class="content chatBody" style="display: none">
+		<div class="contact-profile">
+			<p id="selectedUser"></p>
+		</div>
+		<div class="messages">
+			<ul id="chatroom">
+			</ul>
+		</div>
+		<div class="message-input">
+			<div class="wrap">
+			<input type="text" id="message" placeholder="Write your message..." />
+			<button class="button" id="sendMessage"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://rawgit.com/socketio/socket.io-client/master/dist/socket.io.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
